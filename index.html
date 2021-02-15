@@ -23,7 +23,7 @@
             </div>
             <ul class="header__list">
                 <li>
-                    <button class="header__button">
+                    <button class="header__button mobile__hide">
                         <img src="img/burger.svg" alt="логотип открывающего меню (бургер)" width="32" height="23">
                     </button>
                 </li>
@@ -90,16 +90,17 @@
     <main class="main">
 
         <section class="intro">
-            <img src="img/man_in_jacket.jpg" alt="мужчина в куртке" width="800" height="764">
+            <img src="img/man_in_jacket.jpg" alt="мужчина в куртке" width="800" height="764" class="intro__img">
             <div class="intro__heading-wrapper">
-                <h1 class="intro__heading">The Brand<span class="intro__text"> Of Luxerious<span class="intro__pink">
-                            Fashion</span></span></h1>
-            </div>
+                <!--  <h1 class="intro__heading">The Brand</h1>
+                    <h1 class="intro__text"> Of Luxerious </h1>
+                    <h1 class="intro__pink">Fashion</h1> -->
+            </div> 
         </section>
 
-        <section class="stock">
+        <section class="stock container">
             <h2 class="visually-hidden">Stock</h2>
-            <ul class="stock__list container">
+            <ul class="stock__list">
                 <li class="stock__item stock__item--woman">
                     <a href="#">
                         <h3 class="stock__heading">30% OFF<span class="stock__text">For Woman</span></h3>
@@ -132,10 +133,9 @@
         </section>
 
         <section class="goods container">
-
             <ul class="goods__list">
                 <li class="goods__item">
-                    <img src="img/goods-man-in-jacket.jpg" alt="мужчина в куртке" width="360" height="420">
+                    <img src="img/goods-man-in-jacket.jpg" alt="мужчина в куртке" max-width="360" height="420">
                     <h3 class="goods__heading">Ellery X M'O Capsule</h3>
                     <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of
@@ -144,7 +144,7 @@
                 </li>
 
                 <li class="goods__item">
-                    <img src="img/goods-woman-in-black-siut.jpg" alt="девушка в костюме" width="360" height="420">
+                    <img src="img/goods-woman-in-black-siut.jpg" alt="девушка в костюме" max-width="360" height="420">
                     <h3 class="goods__heading">Ellery X M'O Capsule</h3>
                     <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of
@@ -153,7 +153,7 @@
                 </li>
 
                 <li class="goods__item">
-                    <img src="img/goods-man-in-shorts.jpg" alt="парень в бермудах" width="360" height="420">
+                    <img src="img/goods-man-in-shorts.jpg" alt="парень в бермудах" max-width="360" height="420">
                     <h3 class="goods__heading">Ellery X M'O Capsule</h3>
                     <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of
@@ -162,7 +162,7 @@
                 </li>
 
                 <li class="goods__item">
-                    <img src="img/goods-man-in-polo.jpg" alt="мужчина в брюках и футболке" width="360" height="420">
+                    <img src="img/goods-man-in-polo.jpg" alt="мужчина в брюках и футболке" max-width="360" height="420">
                     <h3 class="goods__heading">Ellery X M'O Capsule</h3>
                     <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of
@@ -171,7 +171,7 @@
                 </li>
 
                 <li class="goods__item">
-                    <img src="img/goods-woman-in-suit.jpg" alt="девушка в светлом костюме" width="360" height="420">
+                    <img src="img/goods-woman-in-suit.jpg" alt="девушка в светлом костюме" max-width="360" height="420">
                     <h3 class="goods__heading">Ellery X M'O Capsule</h3>
                     <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of
@@ -180,7 +180,7 @@
                 </li>
 
                 <li class="goods__item">
-                    <img src="img/goods-woman-in-bloose.jpg" alt="девушка в блузке" width="360" height="420">
+                    <img src="img/goods-woman-in-bloose.jpg" alt="девушка в блузке" max-width="360" height="420">
                     <h3 class="goods_heading">Ellery X M'O Capsule</h3>
                     <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
                         of
@@ -191,7 +191,9 @@
         </section>
 
         <section class="browse container">
-            <button class="browse__button">Browse All Product</button>
+            <button class="browse__button">
+                <a href="product.html">Browse All Product</a>
+            </button>
         </section>
 
     </main>
@@ -237,13 +239,13 @@
                 <li class="subscribe__review">
                     <div class="subscribe__item">
                         <img src="img/sub-woman-face.png" alt="фотография с лицом улыбающейся девушки" width="145"
-                            height="150">
+                            height="150" class="subscribe__img">
                         <p class="subscribe__text">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
                             purus condimentum</p>
                     </div>
                 </li>
 
-                <li class="subscribe__email">
+                <!-- <li class="subscribe__email">
                     <div class="subscribe__item">
                         <h3 class="subscribe__heading">Subscribe<span class="subscribe__text--heading">For Our Newletter
                                 and Promotion</span></h3>
@@ -252,9 +254,9 @@
                             <button class="subscribe__button">Subscribe</button>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
-        </section>
+        </section> 
 
         <section class="cellar">
 
@@ -297,12 +299,8 @@
                     </li>
                 </div>
             </ul>
-
         </section>
-
     </footer>
-
 </body>
-
 
 </html>

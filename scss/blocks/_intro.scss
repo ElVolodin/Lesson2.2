@@ -14,9 +14,10 @@
     font-style: normal;
     font-weight: 900;
     line-height: 58px;
-    text-transform: uppercase;
-    padding: 0 0 0 64px;
+    margin: 0 0 0 64px;
     max-width: 377px;
+    text-transform: uppercase;
+    position: relative;
 
     @include tablet {
         min-height: 78px;
@@ -30,21 +31,37 @@
 
 }
 
-.intro__text {
+.intro__heading:before {
+    height: 91px;
+    width: 12px;
+    content: '';
+    background-color: $pink-dark-color;
+    left: -20px;
+    position: absolute;
+}
+
+.intro__heading-luxerious,
+.intro__heading-pink {
     font-size: 37px;
     font-style: normal;
     font-weight: 700;
     line-height: 44px;
     display: block;
     max-width: 377px;
+    margin: 0 0 0 64px;
+    text-transform: uppercase;
+
 }
 
-.intro__pink {
+.intro__heading-pink {
     color: $pink-dark-color;
 }
 
 .intro__img {
-    width: 50%;
+    max-width: 50%;
     height: auto;
-}
 
+    @include mobile {
+        display: none;
+    }
+}

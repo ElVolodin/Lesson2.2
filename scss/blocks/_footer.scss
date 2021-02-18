@@ -1,8 +1,10 @@
 .service {
     background-color: $black-color-footer;
     min-height: 341px;
-    @include mobile{
-        width: 100%;
+    margin: 0 auto;
+
+    @include mobile {
+        max-width: 100%;
     }
 }
 
@@ -17,7 +19,8 @@
 
     @include mobile {
         flex-direction: column;
-        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -38,9 +41,18 @@
 
 .service__text {
     width: 360px;
+    min-height: 34px;
     margin-top: 16px;
     color: #FBFBFB;
     text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+
+    @include mobile {
+        width: 347px;
+    }
 }
 
 .subscribe__list {
@@ -49,16 +61,18 @@
     align-items: center;
     list-style-type: none;
 
-    @include tablet {
+    @include mobile {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 }
 
 .subscribe {
-    background-image: url(../img/sub-background.jpg);
+    background-image: url(../img/sub_background.jpg);
     min-height: 448px;
     background: linear-gradient(rgba(244, 244, 244, 0.7));
+    max-width: 100%;
 }
 
 .subscribe__item {
@@ -66,7 +80,7 @@
     flex-direction: column;
     margin-top: 97px;
 
-    @include mobile{
+    @include mobile {
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -74,11 +88,20 @@
 }
 
 .subscribe__text {
-    max-width: 359px;
+    width: 359px;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
     line-height: 24px;
+    min-height: 73px;
+
+    @include mobile {
+        max-width: 250px;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 22px;
+    }
 }
 
 .subscribe__heading {
@@ -102,13 +125,21 @@
     max-width: 256px;
     height: 49px;
     background-color: $sub-grey;
+    border-radius: 100px 0px 0px 120px;
+    align-items: center;
+    text-align: center;
+    border: none;
 }
 
 .subscribe__button {
     display: flex;
     max-width: 100px;
-    height: 49px;
-    background: #F16D7F;
+    min-height: 49px;
+    background: $pink-color-button;
+    border-radius: 0px 100px 120px 0px;
+    align-items: center;
+    text-align: center;
+    border: none;
 }
 
 .subscribe__wrapper {
@@ -124,6 +155,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .cellar__therights {
@@ -133,6 +170,10 @@
 .cellar__wrapper {
     display: flex;
     justify-content: flex-end;
+
+    @include tablet {
+        margin-right: 50px;
+    }
 }
 
 .cellar__text {
@@ -147,13 +188,4 @@
     max-width: 32px;
     min-height: 32px;
     margin: 32px 0 23px 0;
-}
-
-@media (max-width: 375px){
-    
-    .subscribe__img{
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
 }

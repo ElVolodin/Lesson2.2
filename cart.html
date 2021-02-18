@@ -31,14 +31,14 @@
                 </li>
                 <li>
                     <form action="registration.html">
-                        <button class="header__button">
+                        <button class="header__button-person">
                             <img src="img/person.svg" alt="иконка аватара (человечка), персона" width="29" height="29">
                         </button>
                     </form>
                 </li>
                 <li>
                     <form action="cart.html">
-                        <button class="header__button">
+                        <button class="header__button-cart">
                             <img src="img/cart.svg" alt="корзина" width="32" height="29">
                         </button>
                     </form>
@@ -56,152 +56,184 @@
     <div class="cart__product container">
 
         <div class="wrapper__product">
-            <section class="product">
-                <div class="product__img"></div>
-                <ul class="product__list">
-                    <li class="product__item">
-                        <h3 class="product__heading">MANGO PEOPLE T-SHIRT</h3>
-                    </li>
-                    <li class="product__item"><p class="product__text">Price: $300</p></li>
-                    <li class="product__item"><p class="product__text">Color: Red</p></li>
-                    <li class="product__item"><p class="product__text">Size: Xl</p></li>
-                    <li class="product__item"> <p class="product__text">Quantity:</p></li>
-                </ul>
+            <section class="cart__product-mango">
+                <div class="cart__img-container">
+                    <div class="cart__product-img">
+                        <img src="img/product_img_man_in_blue.jpg" width="262" height="306"
+                            alt="мужчина в синей толстовке">
+                    </div>
+                    <ul class="cart__product-list">
+                        <li class="cart__product-item">
+                            <h3 class="cart__product-heading">MANGO PEOPLE T-SHIRT</h3>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Price: $300</p>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Color: Red</p>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Size: Xl</p>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Quantity:</p>
+                        </li>
+                </div>
                 </ul>
             </section>
 
-            <section class="product">
-                <div class="product__img"></div>
-                <ul class="product__list">
-                    <li class="product__item">
-                        <h3 class="product__heading">MANGO PEOPLE T-SHIRT</h3>
-                    </li>
-                    <li class="product__item"><p class="product__text">Price: $300</p></li>
-                    <li class="product__item"><p class="product__text">Color: Red</p></li>
-                    <li class="product__item"><p class="product__text">Size: Xl</p></li>
-                    <li class="product__item"> <p class="product__text">Quantity:</p></li>
+            <section class="cart__product-addres">
+                <div class="cart__img-container">
+                    <div class="cart__product-img">
+                        <img src="img/product_img_man_in_red.jpg" alt="мужчина в красной куртке">
+                    </div>
+                    <ul class="cart__product-list">
+                        <li class="cart__product-item">
+                            <h3 class="product__product-heading">MANGO PEOPLE T-SHIRT</h3>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Price: $300</p>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Color: Red</p>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Size: Xl</p>
+                        </li>
+                        <li class="cart__product-item">
+                            <p class="cart__product-text">Quantity:</p>
+                        </li>
+                </div>
                 </ul>
             </section>
 
-            <div class="product__button--container">
-                <button class="product__button"><p class="product__button--text">CLEAR SHOPPING CART</p></button>
-                <button class="product__button"><p class="product__button--text">CONTINUE SHOPPING</p></button>
+            <div class="cart__product-button--container">
+                <button class="cart__product-button">
+                    <p class="cart__product-button--text">CLEAR SHOPPING CART</p>
+                </button>
+                <button class="cart__product-button">
+                    <p class="cart__product-button--text">CONTINUE SHOPPING</p>
+                </button>
             </div>
         </div>
 
         <section class="delivery ">
             <div class="wrapper__dilvery">
-            <ul class="delivery__list">
-                <li class="delivery__item"><h3 class="delivery__heading"> SHIPPING ADRESS</h3></li>
-                <li class="delivery__item">
-                    <input type="text" class="delivery__input--origin" placeholder="Bangladesh">
-                </li>
-                <li class="delivery__item">
-                    <input type="text" class="delivery__input" placeholder="State">
-                </li>
-                <li class="delivery__item">
-                    <input type="text" class="delivery__input" placeholder="PostCode/Zip">
-                </li>
-                <li class="delivery__item">
-                    <button class="delivery__button"><p class="delivery__button--text">GET A QUOTE</p></button>
-                </li>
-            </ul>
+                <ul class="delivery__list">
+                    <li class="delivery__item">
+                        <h3 class="delivery__heading"> SHIPPING ADRESS</h3>
+                    </li>
+                    <li class="delivery__item">
+                        <input type="text" class="delivery__input--origin" placeholder="Bangladesh">
+                    </li>
+                    <li class="delivery__item">
+                        <input type="text" class="delivery__input" placeholder="State">
+                    </li>
+                    <li class="delivery__item">
+                        <input type="text" class="delivery__input" placeholder="PostCode/Zip">
+                    </li>
+                    <li class="delivery__item">
+                        <button class="delivery__button">
+                            <p class="delivery__button--text">GET A QUOTE</p>
+                        </button>
+                    </li>
+                </ul>
 
-            <section class="total">
-                <div class="total__wrapper">
-                    <ul class="total__list">
-                        <li class="total__item">
-                            <p class="total__text">SUB TOTAL</p>
-                        </li>
-                        <li class="total__item">
-                            <h2 class="total__heading">GRAND TOTAL</h2>
-                        </li>
-                        <li class="total__item">
-                            <hr class="total__straight">
-                        </li>
-                        <li class="total__item">
-                            <button class="total__button">
-                                <p class="total__button--text">PROCEED TO CHECKOUT</p>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                <section class="total">
+                    <div class="total__wrapper">
+                        <ul class="total__list">
+                            <li class="total__item">
+                                <p class="total__text">SUB TOTAL</p>
+                            </li>
+                            <li class="total__item">
+                                <h2 class="total__heading">GRAND TOTAL</h2>
+                            </li>
+                            <li class="total__item">
+                                <hr class="total__straight">
+                            </li>
+                            <li class="total__item">
+                                <button class="total__button">
+                                    <p class="total__button--text">PROCEED TO CHECKOUT</p>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </section>
+    </div>
 
-</div>
+    <footer class="footer">
 
-<footer class="footer">
-
-    <section class="subscribe">
-        <ul class="subscribe__list container">
-            <li class="subscribe__review">
-                <div class="subscribe__item">
-                    <img src="img/sub-woman-face.png" alt="фотография с лицом улыбающейся девушки" width="145"
-                        height="150">
-                    <p class="subscribe__text">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
-                        purus condimentum</p>
-                </div>
-            </li>
-
-            <li class="subscribe__email">
-                <div class="subscribe__item">
-                    <h3 class="subscribe__heading">Subscribe<span class="subscribe__text--heading">For Our Newletter
-                            and Promotion</span></h3>
-                    <div class="subscribe__wrapper">
-                        <input type="email" placeholder="Enter Your Email" class="subscribe__input">
-                        <button class="subscribe__button">Subscribe</button>
+        <section class="subscribe">
+            <ul class="subscribe__list container">
+                <li class="subscribe__review">
+                    <div class="subscribe__item">
+                        <img src="img/sub-woman-face.png" alt="фотография с лицом улыбающейся девушки" width="145"
+                            height="150">
+                        <p class="subscribe__text">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                            purus condimentum</p>
                     </div>
+                </li>
+
+                <li class="subscribe__email">
+                    <div class="subscribe__item">
+                        <h3 class="subscribe__heading">Subscribe</h3>
+                        <h3 class="subscribe__text--heading">For Our Newletter
+                            and Promotion</h3>
+                        <div class="subscribe__wrapper">
+                            <input type="email" placeholder="Enter Your Email" class="subscribe__input">
+                            <button class="subscribe__button">Subscribe</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cellar">
+
+            <ul class="cellar__list container">
+                <li class="cellar__therights">
+                    <p class="cellar__text">© 2021 Brand All Rights Reserved.</p>
+                </li>
+
+                <div class="cellar__wrapper">
+                    <li class="cellar__links">
+                        <a href="#" class="link_facebook">
+                            <button class="cellar__button">
+                                <img src="img/facebook.svg" alt="иконка Facebook">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="cellar__links">
+                        <a href="#" class="link_instagram">
+                            <button class="cellar__button">
+                                <img src="img/instagram.svg" alt="иконка Instagram">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="cellar__links">
+                        <a href="#" class="link_pinterest">
+                            <button class="cellar__button">
+                                <img src="img/pinterest.svg" alt="иконка Pinterest">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="cellar__links">
+                        <a href="#" class="link_twitter">
+                            <button class="cellar__button">
+                                <img src="img/twitter.svg" alt="иконка Twitter">
+                            </button>
+                        </a>
+                    </li>
                 </div>
-            </li>
-        </ul>
-    </section>
+            </ul>
 
-    <section class="cellar">
+        </section>
 
-        <ul class="cellar__list container">
-            <li class="cellar__therights">
-                <p class="cellar__text">© 2021 Brand All Rights Reserved.</p>
-            </li>
-
-            <div class="cellar__wrapper">
-                <li class="cellar__links">
-                    <a href="#" class="link_facebook">
-                        <button class="cellar__button">
-                            <img src="img/facebook.svg" alt="иконка Facebook">
-                        </button>
-                    </a>
-                </li>
-
-                <li class="cellar__links">
-                    <a href="#" class="link_instagram">
-                        <button class="cellar__button">
-                            <img src="img/instagram.svg" alt="иконка Instagram">
-                        </button>
-                    </a>
-                </li>
-
-                <li class="cellar__links">
-                    <a href="#" class="link_pinterest">
-                        <button class="cellar__button">
-                            <img src="img/pinterest.svg" alt="иконка Pinterest">
-                        </button>
-                    </a>
-                </li>
-
-                <li class="cellar__links">
-                    <a href="#" class="link_twitter">
-                        <button class="cellar__button">
-                            <img src="img/twitter.svg" alt="иконка Twitter">
-                        </button>
-                    </a>
-                </li>
-            </div>
-        </ul>
-
-    </section>
-
-</footer>
+    </footer>
 
 </body>
 

@@ -6,10 +6,10 @@
     margin-bottom: 98px;
     list-style-type: none;
 
-    @media (max-width:$mobile-width){
+    @include mobile {
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        justify-content: center;
+        flex-wrap: nowrap;
     }
 }
 
@@ -26,7 +26,11 @@
 }
 
 .stock__item--woman {
-    background-image: url(../img/stock-womanjpg.jpg);
+    background-image: url(../img/stock-woman.jpg);
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .stock__item--accessory {
@@ -36,10 +40,18 @@
 
 .stock__item--man {
     background-image: url(../img/stock-man.jpg);
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .stock__item--kid {
-    background-image: url(../img/stock-kid.jpg);
+    background-image: url(../img/stock-child.jpg);
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .stock__item--woman,

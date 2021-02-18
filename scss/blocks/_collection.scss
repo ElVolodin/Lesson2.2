@@ -1,23 +1,23 @@
-.collection__list{
+.collection__list {
     list-style-type: none;
     align-items: center;
 }
 
-.collection{
+.collection {
     border: 2px solid $total-grey;
 }
 
-.collection__item{
+.collection__item {
     display: flex;
     justify-content: center;
 }
 
-.collection__wrapper{
-   padding-top: 64px;
-   padding-bottom: 65px;
+.collection__wrapper {
+    padding-top: 64px;
+    padding-bottom: 65px;
 }
 
-.collection__header--pink{
+.collection__header--pink {
     width: 146px;
     font-size: 14px;
     font-style: normal;
@@ -26,7 +26,7 @@
     color: $pink-dark-color;
 }
 
-.collection__header--black{
+.collection__header--black {
     width: 253px;
     font-size: 18px;
     font-style: normal;
@@ -35,19 +35,19 @@
     color: $black-color;
 }
 
-.collection__hr--pink{
+.collection__hr--pink {
     height: 3px;
     width: 63px;
     background-color: $pink-dark-color;
 }
 
-.collection__hr--black{
+.collection__hr--black {
     width: 641px;
-    
-    
+
+
 }
 
-.collection__text{
+.collection__text {
     width: 555px;
     font-size: 14px;
     font-style: normal;
@@ -56,7 +56,7 @@
     color: $black-color;
 }
 
-.collection__header--price{
+.collection__header--price {
     width: 56px;
     font-size: 24px;
     font-style: normal;
@@ -66,13 +66,13 @@
     margin-bottom: 65px;
 }
 
-.collection__dropdown{
+.collection__dropdown {
     display: flex;
     justify-content: space-around;
     margin: 65px 42px 0 0;
 }
 
-.collection__button{
+.collection__button {
     margin-top: 49px;
     margin-bottom: 65px;
     display: flex;
@@ -84,18 +84,19 @@
     align-items: center;
 }
 
-.collection__button--text{
+.collection__button--text {
     min-height: 19px;
     width: 82px;
     color: $pink-dark-color;
     position: relative;
 }
 
-.collection__button--text:before{
+.collection__button--text:before {
+    width: 30px;
+    height: 30px;
     content: '';
-    width: 20px;
-    height: 15px;
-    background-image: url(/img/collection_basket.svg);
+    background-image: url(../img/collection_baske.svg);
     position: absolute;
     left: -20%;
+    bottom: 20px
 }

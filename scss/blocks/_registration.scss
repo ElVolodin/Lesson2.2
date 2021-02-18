@@ -18,9 +18,18 @@
     list-style-type: none;
 }
 
-.wrapper__input--registration {
+.wrapper__input-registration {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+        align-items: center;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+
 }
 
 .input__information {
@@ -28,11 +37,16 @@
 }
 
 .input__field {
-    height: 45px;
+    min-height: 45px;
     width: 360px;
     border-radius: 0px;
     background-color: $white-color;
     border: 1px solid #A4A4A4;
+
+    @include mobile {
+        max-width: 80%;
+        margin-right: 30px;
+    }
 }
 
 .input__text {

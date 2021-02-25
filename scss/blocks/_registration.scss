@@ -12,6 +12,11 @@
     font-weight: 400;
     line-height: 29px;
     color: $pink-dark-color;
+
+    @include mobile {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .input__list {

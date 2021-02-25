@@ -5,6 +5,11 @@
 
     @include mobile {
         max-width: 100%;
+        padding-bottom: 81px;
+    }
+
+    @include tablet {
+        padding-bottom: 64px;
     }
 }
 
@@ -52,6 +57,7 @@
 
     @include mobile {
         width: 347px;
+        margin-right: 30px;
     }
 }
 
@@ -61,6 +67,12 @@
     align-items: center;
     list-style-type: none;
 
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     @include mobile {
         flex-direction: column;
         align-items: center;
@@ -69,16 +81,27 @@
 }
 
 .subscribe {
-    background-image: url(../img/sub_background.jpg);
+    background-image: url("../img/sub-background.jpg");
     min-height: 448px;
-    background: linear-gradient(rgba(244, 244, 244, 0.7));
-    max-width: 100%;
+    width: 100%;
+    background-size: cover;
+
+    @include tablet {
+        padding-bottom: 140px;
+    }
 }
 
 .subscribe__item {
     align-items: center;
     flex-direction: column;
     margin-top: 97px;
+
+    @include tablet {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-right: 40px;
+    }
 
     @include mobile {
         align-items: center;
@@ -95,12 +118,21 @@
     line-height: 24px;
     min-height: 73px;
 
+    @include tablet {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     @include mobile {
         max-width: 250px;
         font-size: 18px;
         font-style: italic;
         font-weight: 400;
         line-height: 22px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -110,9 +142,15 @@
     font-weight: 700;
     line-height: 40px;
     text-transform: uppercase;
+
+    @include tablet {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
-.subscribe__text--heading {
+.subscribe__text-heading {
     display: block;
     font-size: 18px;
     font-style: normal;
@@ -188,4 +226,9 @@
     max-width: 32px;
     min-height: 32px;
     margin: 32px 0 23px 0;
+}
+
+.cellar__button:hover {
+    background: $pink-dark-color;
+    box-shadow: inset 0 0 0 3px $pink-dark-color;
 }

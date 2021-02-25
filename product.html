@@ -12,13 +12,9 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <header class="header">
         <div class="container header__wrapper">
             <div class="header__logo-wrapper">
@@ -52,22 +48,27 @@
         </div>
     </header>
 
-    <div class="product__heading">
-        <div class="product__heading--wrapper container">
+    <section class="product__heading container">
+        <div class="product__heading-wrapper">
             <h2 class="product__header container">
-                SHOPPING CART
+                NEW ARRIVALS
             </h2>
             <div class="product__path">
-                <a href="#" class="product__link">
-                    <h3 class="product__path--home">HOME<h3 class="product__path--men">/ MEN </h3>
-                        <h3 class="product__path--Arrivals">/NEW ARRIVALS</h3>
+                <a href="index.html" class="product__link">
+                    <h3 class="product__path-home">HOME</h3>
+                </a>
+                <a href="product.html" class="product__link">
+                    <h3 class="product__path-men">/MEN</h3>
+                </a>
+                <a href="catalog.html">
+                    <h3 class="product__path-Arrivals">/NEW ARRIVALS</h3>
                     </h3>
                 </a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container__wrapper">
+    <section class="carousel__wrapper container">
         <div class="col-12">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -88,176 +89,180 @@
                     </button>
                 </div>
             </div>
-        </div>
+    </section>
 
-        <section class="collection container">
-            <div class="collection__wrapper">
-                <ul class="collection__list">
-                    <li class="collection__item">
-                        <h3 class="collection__header--pink">WOMEN COLLECTION</h3>
-                    </li>
-                    <li class="collection__item">
-                        <h2 class="collection__header--black">MOSCHINO CHEAP AND CHIC</h2>
-                    </li>
-                    <li class="collection__item">
-                        <hr class="collection__hr--pink">
-                    </li>
-                    <li class="collection__item">
-                        <p class="collection__text">Compellingly actualize fully researched processes before proactive
-                            outsourcing. Progressively syndicate collaborative architectures before cutting-edge
-                            services. Completely visualize parallel core competencies rather than exceptional portals.
-                        </p>
-                    </li>
-                    <li class="collection__item">
-                        <h2 class="collection__header--price">$561</h2>
-                    </li>
-                    <li class="collection__item">
-                        <hr class="collection__hr--black">
-                    </li>
-                    <li class="collection__item">
-                        <div class="collection__dropdown">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    CHOOSE COLOR
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item active" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    CHOOSE SIZE
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item active" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    QUANTITY
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item active" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
-                            </div>
+    <section class="collection">
+        <div class="collection__wrapper">
+            <ul class="collection__list">
+                <li class="collection__item">
+                    <h3 class="collection__header--pink">WOMEN COLLECTION</h3>
+                </li>
+                <li class="collection__item">
+                    <h2 class="collection__header--black">MOSCHINO CHEAP AND CHIC</h2>
+                </li>
+                <li class="collection__item">
+                    <hr class="collection__hr--pink">
+                </li>
+                <li class="collection__item">
+                    <p class="collection__text">Compellingly actualize fully researched processes before proactive
+                        outsourcing. Progressively syndicate collaborative architectures before cutting-edge
+                        services. Completely visualize parallel core competencies rather than exceptional portals.
+                    </p>
+                </li>
+                <li class="collection__item">
+                    <h2 class="collection__header--price">$561</h2>
+                </li>
+                <li class="collection__item">
+                    <hr class="collection__hr--black">
+                </li>
+                <li class="collection__item">
+                    <div class="collection__dropdown">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CHOOSE COLOR
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item active" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="collection__item">
-                        <button class="collection__button">
-                            <p class="collection__button--text">Add To Cart</p>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CHOOSE SIZE
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item active" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                QUANTITY
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item active" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection__item">
+                    <button class="collection__button">
+                        <p class="collection__button--text">Add To Cart</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        <section class="goods container">
-            <ul class="goods__list">
-                <li class="goods__item">
-                    <img src="img/goods-man-in-jacket.jpg" alt="мужчина в куртке" max-width="360" height="420">
-                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
-                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of
-                        cool Kym Ellery teams up with Moda Operandi</p>
-                    <p class="goods__price">$52.00</p>
+    <section class="goods container">
+        <ul class="goods__list">
+            <li class="goods__item">
+                <img src="img/goods-man-in-jacket.jpg" alt="мужчина в куртке" max-width="360" height="420">
+                <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                    of
+                    cool Kym Ellery teams up with Moda Operandi</p>
+                <p class="goods__price">$52.00</p>
+            </li>
+
+            <li class="goods__item">
+                <img src="img/goods-woman-in-black-suit.jpg" alt="девушка в костюме" max-width="360" height="420">
+                <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                    of
+                    cool Kym Ellery teams up with Moda Operandi</p>
+                <p class="goods__price">$52.00</p>
+            </li>
+
+            <li class="goods__item-product">
+                <img src="img/goods-man-in-shorts.jpg" alt="парень в бермудах" max-width="360" height="420">
+                <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                    of
+                    cool Kym Ellery teams up with Moda Operandi</p>
+                <p class="goods__price">$52.00</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+
+        <section class="subscribe">
+            <ul class="subscribe__list container">
+                <li class="subscribe__review">
+                    <div class="subscribe__item">
+                        <img src="img/sub-woman-face.png" alt="фотография с лицом улыбающейся девушки" width="145"
+                            height="150">
+                        <p class="subscribe__text">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar
+                            purus condimentum</p>
+                    </div>
                 </li>
 
-                <li class="goods__item">
-                    <img src="img/goods-woman-in-black-suit.jpg" alt="девушка в костюме" max-width="360" height="420">
-                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
-                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of
-                        cool Kym Ellery teams up with Moda Operandi</p>
-                    <p class="goods__price">$52.00</p>
-                </li>
-
-                <li class="goods__item">
-                    <img src="img/goods-man-in-shorts.jpg" alt="парень в бермудах" max-width="360" height="420">
-                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
-                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                        of
-                        cool Kym Ellery teams up with Moda Operandi</p>
-                    <p class="goods__price">$52.00</p>
+                <li class="subscribe__email">
+                    <div class="subscribe__item">
+                        <h3 class="subscribe__heading">Subscribe<span class="subscribe__text--heading">For Our
+                                Newletter
+                                and Promotion</span></h3>
+                        <div class="subscribe__wrapper">
+                            <input type="email" placeholder="Enter Your Email" class="subscribe__input">
+                            <button class="subscribe__button">Subscribe</button>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
 
-        <footer class="footer">
+        <section class="cellar">
 
-            <section class="subscribe">
-                <ul class="subscribe__list container">
-                    <li class="subscribe__review">
-                        <div class="subscribe__item">
-                            <img src="img/sub-woman-face.png" alt="фотография с лицом улыбающейся девушки" width="145"
-                                height="150">
-                            <p class="subscribe__text">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                                pulvinar
-                                purus condimentum</p>
-                        </div>
+            <ul class="cellar__list container">
+                <li class="cellar__therights">
+                    <p class="cellar__text">© 2021 Brand All Rights Reserved.</p>
+                </li>
+
+                <div class="cellar__wrapper">
+                    <li class="cellar__links">
+                        <a href="#" class="link_facebook">
+                            <button class="cellar__button">
+                                <img src="img/facebook.svg" alt="иконка Facebook">
+                            </button>
+                        </a>
                     </li>
 
-                    <li class="subscribe__email">
-                        <div class="subscribe__item">
-                            <h3 class="subscribe__heading">Subscribe<span class="subscribe__text--heading">For Our
-                                    Newletter
-                                    and Promotion</span></h3>
-                            <div class="subscribe__wrapper">
-                                <input type="email" placeholder="Enter Your Email" class="subscribe__input">
-                                <button class="subscribe__button">Subscribe</button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="cellar">
-
-                <ul class="cellar__list container">
-                    <li class="cellar__therights">
-                        <p class="cellar__text">© 2021 Brand All Rights Reserved.</p>
+                    <li class="cellar__links">
+                        <a href="#" class="link_instagram">
+                            <button class="cellar__button">
+                                <img src="img/instagram.svg" alt="иконка Instagram">
+                            </button>
+                        </a>
                     </li>
 
-                    <div class="cellar__wrapper">
-                        <li class="cellar__links">
-                            <a href="#" class="link_facebook">
-                                <button class="cellar__button">
-                                    <img src="img/facebook.svg" alt="иконка Facebook">
-                                </button>
-                            </a>
-                        </li>
+                    <li class="cellar__links">
+                        <a href="#" class="link_pinterest">
+                            <button class="cellar__button">
+                                <img src="img/pinterest.svg" alt="иконка Pinterest">
+                            </button>
+                        </a>
+                    </li>
 
-                        <li class="cellar__links">
-                            <a href="#" class="link_instagram">
-                                <button class="cellar__button">
-                                    <img src="img/instagram.svg" alt="иконка Instagram">
-                                </button>
-                            </a>
-                        </li>
+                    <li class="cellar__links">
+                        <a href="#" class="link_twitter">
+                            <button class="cellar__button">
+                                <img src="img/twitter.svg" alt="иконка Twitter">
+                            </button>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </section>
+    </footer>
 
-                        <li class="cellar__links">
-                            <a href="#" class="link_pinterest">
-                                <button class="cellar__button">
-                                    <img src="img/pinterest.svg" alt="иконка Pinterest">
-                                </button>
-                            </a>
-                        </li>
-
-                        <li class="cellar__links">
-                            <a href="#" class="link_twitter">
-                                <button class="cellar__button">
-                                    <img src="img/twitter.svg" alt="иконка Twitter">
-                                </button>
-                            </a>
-                        </li>
-                    </div>
-                </ul>
-            </section>
-        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

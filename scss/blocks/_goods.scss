@@ -16,7 +16,7 @@
 
 .goods__item {
     max-width: 360px;
-    height: 581px;
+    min-height: 581px;
 
     @include tablet {}
 
@@ -31,4 +31,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
+}
+
+.goods__item-product {
+    max-width: 360px;
+    min-height: 581px;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
 }

@@ -1,6 +1,6 @@
 .product__heading {
-    height: 148px;
-    background-color: $white-color;
+    min-height: 148px;
+    background-color: $product-heading;
 }
 
 .product__header {
@@ -12,19 +12,35 @@
     font-weight: 400;
     line-height: 29px;
     color: $pink-dark-color;
+
+    @include mobile {
+        justify-content: center;
+    }
 }
 
-.product__heading--wrapper {
+.product__heading-wrapper {
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .product__path {
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-direction: row;
+
+    @include mobile {
+        justify-content: center;
+        margin: 10px 0 0 90px;
+    }
 }
 
-.product__path--home {
+.product__path-home {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -32,7 +48,7 @@
     color: $black-color;
 }
 
-.product__path--men {
+.product__path-men {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -40,12 +56,13 @@
     color: $black-color;
 }
 
-.product__path--Arrivals {
+.product__path-Arrivals {
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 17px;
     color: $pink-dark-color;
+    width: 209px;
 }
 
 .product__link {

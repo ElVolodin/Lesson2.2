@@ -2,6 +2,10 @@
     margin-top: 57px;
     background-color: $total-grey;
     padding: 39px 34px 42px 44px;
+
+    @include mobile {
+        margin-bottom: 96px;
+    }
 }
 
 .total__list {
@@ -31,12 +35,12 @@
 }
 
 .total__button {
-    width: 273px;
-    height: 50px;
+    max-width: 273px;
+    min-height: 50px;
     background-color: $pink-dark-color;
 }
 
-.total__button--text {
+.total__button-text {
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
